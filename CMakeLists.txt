@@ -18,5 +18,7 @@ add_executable(mymuduo main.cpp
         include/muduo/EventLoop.h
         include/muduo/Channel.h
         include/muduo/TcpServer.h
+        include/muduo/Poller.h
+        include/muduo/EPollPoller.h
 )
 target_link_libraries(mymuduo PRIVATE muduo_lib)

@@ -11,4 +11,6 @@ add_library(muduo_lib SHARED ${MUDUO_SRC_LIST}
         InetAddress.cpp
         Channel.cpp
         TcpServer.cpp
-        EventLoop.cpp)
+        EventLoop.cpp
+        Poller.cpp
+        DefaultPoller.cpp)
