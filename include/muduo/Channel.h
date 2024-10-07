@@ -31,6 +31,7 @@ private:
     std::weak_ptr<void> tie_;
     bool tied_;
 
+    EventCallback readCallback_;
 
 };
 #endif //MYMUDUO_CHANNEL_H
