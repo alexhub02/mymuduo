@@ -32,7 +32,7 @@ public:
     bool isNoneEvent() const { return events_ == kNoneEvent; }
 
     // 设置fd相应事件掉状态,update是操作poller中对fd的监听
-    void enableReadint() { events_ |= kReadEvent; update(); }
+    void enableReading() { events_ |= kReadEvent; update(); }
     void disableReading() { events_ &= ~kReadEvent; update(); }
     void enableWriting() { events_ |= kWriteEvent; update(); }
     void disableWriting() { events_ &= ~kWriteEvent; update(); }

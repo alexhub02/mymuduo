@@ -13,4 +13,5 @@ add_library(muduo_lib SHARED ${MUDUO_SRC_LIST}
         TcpServer.cpp
         EventLoop.cpp
         Poller.cpp
-        DefaultPoller.cpp)
+        DefaultPoller.cpp
+        EPollPoller.cpp)

@@ -14,7 +14,7 @@ public:
     using ChannelList = std::vector<Channel*>;
 
     Poller(EventLoop *loop);
-    virtual ~Poller();
+    virtual ~Poller() = default;
 
     virtual TimeStamp poll(int timeoutMs, ChannelList *activeChannels) = 0;
     virtual void updateChannel(Channel *channel) = 0;
